@@ -1,0 +1,75 @@
+ /* /* .App {
+  padding: 10px;
+  background-color: #45ecd3;
+} */
+
+
+
+.dropdown-list{
+  display: flex;
+  flex-direction: column;
+}
+.display{
+  margin-top: 100px;
+}
+.charts{
+  width: 1320px;
+} */
+
+/* sidebar(Sbar) */
+/* /* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+.sbar{
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100vh !important;
+}
+.top_section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.logo{
+  width: 70px;
+  border-radius: 100%;
+  line-height: 0;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  height: 30px;
+  padding: 10px;
+}
+.search input{
+  border: none;
+  margin-left: 7px;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+ 
+}
+
+.link{
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045)
+}
+
+a {
+  text-decoration: none !important;
+}
+.link:hover{
+  border-right: 5px solid white;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  background-color: rgb(45, 51, 89);
+  color: white;
+} 
+

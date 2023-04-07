@@ -1,0 +1,40 @@
+// import React from 'react'
+// import SideBar from './components/SideBar/SideBar'
+import "./App.css"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Dashboard from './components/side/Dashboard';
+import Users from './components/side/Users';
+import Messages from './components/side/Messages';
+import Analytics from './components/side/Analytics';
+import FileManager from './components/side/FileManager';
+import Order from './components/side/Order';
+import Saved from './components/side/Saved';
+import Settings from './components/side/Setting'
+import NoPage from './components/side/NoPage';
+import Sbar from './components/Sbar';
+
+
+
+
+export default function App() {
+  return (
+    <div>
+      {/* <SideBar/> */}
+      <Router>
+        <Sbar>
+      <Routes>
+        <Route path = '/' element = {<Dashboard/>}/>
+        <Route path = '/users' element = {<Users/>}/>
+        <Route path = '/messages' element = {<Messages/>}/>
+        <Route path = '/analytics' element = {<Analytics/>}/>
+        <Route path = '/file-manager' element = {<FileManager/>}/>
+        <Route path = '/order' element = {<Order/>}/>
+        <Route path = '/saved' element = {<Saved/>}/>
+        <Route path = '/settings' element = {<Settings/>}/>
+        <Route path = '*' element = {<NoPage/>}/>
+      </Routes>
+      </Sbar>
+      </Router>
+    </div>
+  )
+}

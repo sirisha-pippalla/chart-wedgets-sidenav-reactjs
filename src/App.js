@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "./App.css";
+import AppHeader from './components-1/AppHeader/HeadIndex';
+import SideMenu from './components-1/SideMenu/SideIndex';
+import PageContent from './components-1/PageContent/PageIndex';
+import AppFooter from './components-1/AppFooter/FooterInedx';
+import BarChart from './components-1/Charts/BarChart';
+import Widget from './components-1/Widgets/Widget';
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <AppHeader />
+      <div className="row">
+        <div id="left-content">
+          <SideMenu></SideMenu>
+        </div>
+        <div id="right-content">
+          <Widget></Widget>
+          <div className="row">
+            <div classname="col-md-4" style = {{width: '600px'}}>
 
-export default App;
+              <BarChart></BarChart>
+            </div>
+            <div classname="col-md-4" style = {{width: '600px'}}>
+              <BarChart></BarChart>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <AppFooter />
+
+    </div>
+  )
+}

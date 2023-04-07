@@ -1,0 +1,31 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import './App.css';
+import BarChart from './components/BarChart';
+import Widget from './components/Widget'
+import { useState, useRef, useEffect } from 'react'
+
+function App() {
+  
+  return (
+    // <div className="App">
+    // <row>
+
+    // </row>
+
+    //   <Widget/>
+    //   <div className = 'container display'>
+    //   <Row  className = 'charts'>
+    //     <Col><BarChart/></Col>
+    //     <Col><BarChart/></Col>
+    //   </Row>
+      
+    //   </div>
+      
+    </div>
+  );
+}
+
+export default App;
